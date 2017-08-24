@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_card_event"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_marginBottom="10dp"
+    android:background="#03000000"
+    cardview:cardCornerRadius="3dp"
+    cardview:cardElevation="5dp"
+    cardview:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.kamilabrito.wagchallenge.ui.component.RoundedImageView
+            android:id="@+id/row_iv_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/row_tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/row_iv_image"
+            android:gravity="center_vertical"
+            android:text="Jack Brito"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/iv_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_iv_image"
+            android:layout_margin="10dp"
+            android:src="@drawable/gold" />
+
+        <ImageView
+            android:id="@+id/iv_silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_iv_image"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/iv_gold"
+            android:src="@drawable/silver" />
+
+        <ImageView
+            android:id="@+id/iv_bronze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_iv_image"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/iv_silver"
+            android:src="@drawable/bronze" />
+
+        <TextView
+            android:id="@+id/tv_badge_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_gold"
+            android:layout_below="@+id/iv_bronze"
+            android:text="123" />
+
+        <TextView
+            android:id="@+id/tv_badge_silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_silver"
+            android:layout_below="@+id/iv_bronze"
+            android:layout_toEndOf="@+id/tv_badge_gold"
+            android:text="123" />
+
+        <TextView
+            android:id="@+id/tv_badge_bronze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_bronze"
+            android:layout_below="@+id/iv_bronze"
+            android:layout_toEndOf="@+id/tv_badge_silver"
+            android:text="123" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
